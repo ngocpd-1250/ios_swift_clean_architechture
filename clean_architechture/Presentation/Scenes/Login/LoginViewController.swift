@@ -89,6 +89,6 @@ extension LoginViewController {
 // MARK: - StoryboardSceneBased
 extension LoginViewController: StoryboardSceneBased {
     static var sceneStoryboard: UIStoryboard {
-        return UIStoryboard(resource: R.storyboard.login)
+        return R.storyboard.login()
     }
 }

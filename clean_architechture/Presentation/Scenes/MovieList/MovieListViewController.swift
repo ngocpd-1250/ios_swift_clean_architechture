@@ -93,6 +93,6 @@ extension MovieListViewController: UITableViewDelegate {
 // MARK: - StoryboardSceneBased
 extension MovieListViewController: StoryboardSceneBased {
     static var sceneStoryboard: UIStoryboard {
-        return R.storyboard.login()
+        return R.storyboard.movie()
     }
 }
