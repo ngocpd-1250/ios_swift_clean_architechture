@@ -40,7 +40,7 @@ final class LoginViewController: UIViewController, Bindable {
     }
     
     deinit {
-        //        logDeinit()
+        logDeinit()
     }
     
     // MARK: - Methods

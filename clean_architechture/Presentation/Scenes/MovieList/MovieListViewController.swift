@@ -39,7 +39,7 @@ final class MovieListViewController: UIViewController, Bindable {
     }
     
     deinit {
-        //        logDeinit()
+        logDeinit()
     }
     
     // MARK: - Methods
