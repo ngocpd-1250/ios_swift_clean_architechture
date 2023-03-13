@@ -1,0 +1,18 @@
+//
+//  staging.xcconfig
+//  clean_architechture
+//
+//  Created by phan.duong.ngoc on 2023/03/10.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// APP:
+APP_NAME = Clean (Staging)
+PRODUCT_BUNDLE_IDENTIFIER = ngocpd.clean.staging
+SWIFT_FLAGS = -DSTAGING
+
+// API:
+API_ENDPOINT = https:\/\/api.themoviedb.org
+API_VERSION = 3

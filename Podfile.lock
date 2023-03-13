@@ -1,0 +1,96 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Kingfisher (7.6.0)
+  - MBProgressHUD (1.2.0)
+  - "NSObject+Rx (5.2.0)":
+    - RxSwift (~> 6.0.0)
+  - ObjectMapper (4.2.0)
+  - R.swift (6.0.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - RxAlamofire (6.1.0):
+    - RxAlamofire/Core (= 6.1.0)
+  - RxAlamofire/Core (6.1.0):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.0.0):
+    - RxRelay (= 6.0.0)
+    - RxSwift (= 6.0.0)
+  - RxRelay (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwift (6.0.0)
+  - RxTest (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxViewController (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - SwiftGradients (1.0.0)
+  - SwiftLint (0.50.3)
+  - Then (3.0.0)
+  - ValidatedPropertyKit (0.0.4)
+
+DEPENDENCIES:
+  - Kingfisher (~> 7.0)
+  - MBProgressHUD
+  - "NSObject+Rx (= 5.2)"
+  - ObjectMapper (= 4.2)
+  - R.swift (= 6.0.0)
+  - Reusable (= 4.1)
+  - RxAlamofire (= 6.1)
+  - RxCocoa
+  - RxTest
+  - RxViewController
+  - SwiftGradients (~> 1.0.0)
+  - SwiftLint
+  - Then
+  - ValidatedPropertyKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - MBProgressHUD
+    - "NSObject+Rx"
+    - ObjectMapper
+    - R.swift
+    - R.swift.Library
+    - Reusable
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - RxViewController
+    - SwiftGradients
+    - SwiftLint
+    - Then
+    - ValidatedPropertyKit
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Kingfisher: b9bb0cd6907813593db268be80ddb931423c33b2
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  "NSObject+Rx": 488b91a66043cc47de9cd5de9264f2ae1e2fcb13
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  R.swift: 5ec056f5ba2744de1c3f6deeb4882ae2630f6e63
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  RxAlamofire: 27d77b94881fb308b679b70d0799f74c649df1e3
+  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+  RxTest: ddef4052e63cb116f5b73510488c3113c37c62e5
+  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
+  SwiftGradients: 5640abb7a8d1a247cc33ae30ebce7a219e131dfe
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+  ValidatedPropertyKit: 599b32854be66b3eea55c0ad7aa22c52cba4b997
+
+PODFILE CHECKSUM: 103657f47978e0e0c304ae7354ca48c787b4914f
+
+COCOAPODS: 1.11.3

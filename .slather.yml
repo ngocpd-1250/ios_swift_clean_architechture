@@ -1,0 +1,22 @@
+workspace: clean_architechture.xcworkspace
+xcodeproj: clean_architechture.xcodeproj
+scheme: clean_architechture Dev
+
+ignore:
+  - "../**/*/Xcode*"
+  - "*/Data/*"
+  - "*/Utils/*"
+  - "Pods/*"
+  - "*/Scenes/ViewModel/*"
+  - "*/Domain/*"
+  - "*/Presentation/Base/*"
+  - "*/Presentation/Component/*"
+  - "*/Presentation/Storyboard/*"
+  - "*ViewController.swift"
+  - "*View.swift"
+  - "*Cell.swift"
+  - "*Navigator.swift"
+  - "*UseCase.swift"
+  - "*AppSettings.swift"
+  - "clean_architechture/AppDelegate.swift"
+  - "clean_architechture/App+Injection.swift"

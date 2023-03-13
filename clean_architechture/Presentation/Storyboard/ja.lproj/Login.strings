@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6r8-e0-r3L"; */
+"6r8-e0-r3L.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "TjL-Ee-GsS"; */
+"TjL-Ee-GsS.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "XJE-Hf-bAm"; */
+"XJE-Hf-bAm.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gpI-cc-Pty"; */
+"gpI-cc-Pty.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "rDo-bJ-dgX"; */
+"rDo-bJ-dgX.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rDo-bJ-dgX"; */
+"rDo-bJ-dgX.normalTitle" = "Button";
