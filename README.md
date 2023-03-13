@@ -22,7 +22,7 @@ Clean architecture + MVVM + RxSwift.
 ## Installation
 Clone this repository
 ```bash
-git clone git@github.com:
+git clone git@github.com:ngocpd-1250/ios_swift_clean_architechture.git
 ```
 
 Cocoapods
@@ -57,4 +57,4 @@ Run the Xcode project
 
 - Install `slather`: https://github.com/SlatherOrg/slather
 - Run command: `slather`
-![Screenshot 2023-03-13 at 14.31.02.png](https://images.viblo.asia/1e024089-eaaf-4a96-9c1a-883e7bcc26c0.png)
+![Screenshot 2023-03-13 at 14.31.02.png](https://user-images.githubusercontent.com/49447154/224642648-4c6a9346-e6a8-4b40-ab54-6a8aeff265fc.png)
