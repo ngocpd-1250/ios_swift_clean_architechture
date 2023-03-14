@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.4)
+  - KeychainSwift (20.0.0)
   - Kingfisher (7.6.0)
   - MBProgressHUD (1.2.0)
   - "NSObject+Rx (5.2.0)":
@@ -35,6 +36,7 @@ PODS:
   - ValidatedPropertyKit (0.0.4)
 
 DEPENDENCIES:
+  - KeychainSwift (~> 20.0)
   - Kingfisher (~> 7.0)
   - MBProgressHUD
   - "NSObject+Rx (= 5.2)"
@@ -53,6 +55,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KeychainSwift
     - Kingfisher
     - MBProgressHUD
     - "NSObject+Rx"
@@ -73,6 +76,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
   Kingfisher: b9bb0cd6907813593db268be80ddb931423c33b2
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   "NSObject+Rx": 488b91a66043cc47de9cd5de9264f2ae1e2fcb13
@@ -91,6 +95,6 @@ SPEC CHECKSUMS:
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   ValidatedPropertyKit: 599b32854be66b3eea55c0ad7aa22c52cba4b997
 
-PODFILE CHECKSUM: 103657f47978e0e0c304ae7354ca48c787b4914f
+PODFILE CHECKSUM: adfd8f0231332fbb7f3ceaddaf2ec867a8d2e083
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.0

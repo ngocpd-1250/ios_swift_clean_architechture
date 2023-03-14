@@ -24,6 +24,7 @@ target 'clean_architechture' do
     pod 'Then'
     pod 'R.swift', '6.0.0'
     pod 'SwiftLint'
+    pod 'KeychainSwift', '~> 20.0'
     
   target 'clean_architechtureTests' do
     inherit! :search_paths
