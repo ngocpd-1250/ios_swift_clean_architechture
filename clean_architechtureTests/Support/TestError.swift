@@ -7,6 +7,4 @@
 
 import Foundation
 
-struct TestError: Error {
-    
-}
+struct TestError: Error {}

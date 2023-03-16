@@ -25,10 +25,10 @@ extension API {
                        requireAccessToken: false)
         }
     }
-    
+
     final class GetTopRatedMoviesOutput: APIOutput {
         private(set) var movies: [MovieData] = []
-        
+
         override func mapping(map: Map) {
             super.mapping(map: map)
             movies <- map["results"]

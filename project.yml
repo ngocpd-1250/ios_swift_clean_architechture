@@ -95,6 +95,10 @@ targets: # The List of our targets
       - name: Swiftlint
         script: |
                 "${PODS_ROOT}/SwiftLint/swiftlint"
+      - name: SwiftFormat
+        script: |
+                "${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat" "$SRCROOT"
+
   clean_architechtureTests:
     type: bundle.unit-test
     platform: iOS

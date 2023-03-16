@@ -23,11 +23,13 @@ extension UIViewController {
 extension Reactive where Base: UIViewController {
     var error: Binder<Error> {
         return Binder(base) { viewController, error in
-            guard !(viewController is UIAlertController) else { return }
+            guard !(viewController is UIAlertController) else {
+                return
+            }
             viewController.showErrorMessage(message: error.localizedDescription)
         }
     }
-    
+
     var isLoading: Binder<Bool> {
         return Binder(base) { viewController, isLoading in
             if isLoading {

@@ -15,14 +15,14 @@ extension Validation where Value == String {
         guard let regularExpression = try? NSRegularExpression(pattern: pattern, options: options) else {
             return .init { _ in .failure("Invalid regular expression: \(pattern)") }
         }
-        
-        return self.matches(
+
+        return matches(
             regularExpression,
             matchingOptions: matchingOptions,
             message: message
         )
     }
-    
+
     public static func matches(_ regex: NSRegularExpression,
                                matchingOptions: NSRegularExpression.MatchingOptions = .init(),
                                message: String) -> Validation {
@@ -32,7 +32,7 @@ extension Validation where Value == String {
                 options: matchingOptions,
                 range: .init(value.startIndex..., in: value)
             ) != nil
-            
+
             if firstMatchIsAvailable {
                 return .success(())
             } else {

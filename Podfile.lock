@@ -30,6 +30,7 @@ PODS:
   - RxViewController (2.0.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - SwiftFormat/CLI (0.50.8)
   - SwiftGradients (1.0.0)
   - SwiftLint (0.50.3)
   - Then (3.0.0)
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxTest
   - RxViewController
+  - SwiftFormat/CLI (~> 0.49)
   - SwiftGradients (~> 1.0.0)
   - SwiftLint
   - Then
@@ -69,6 +71,7 @@ SPEC REPOS:
     - RxSwift
     - RxTest
     - RxViewController
+    - SwiftFormat
     - SwiftGradients
     - SwiftLint
     - Then
@@ -90,11 +93,12 @@ SPEC CHECKSUMS:
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
   RxTest: ddef4052e63cb116f5b73510488c3113c37c62e5
   RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
+  SwiftFormat: 16f04fcde066f40004f51e26bc95bc14dc377d6f
   SwiftGradients: 5640abb7a8d1a247cc33ae30ebce7a219e131dfe
   SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
   ValidatedPropertyKit: 599b32854be66b3eea55c0ad7aa22c52cba4b997
 
-PODFILE CHECKSUM: adfd8f0231332fbb7f3ceaddaf2ec867a8d2e083
+PODFILE CHECKSUM: cf9be0efb03ec53f15763a612111582d8eab99a0
 
 COCOAPODS: 1.12.0

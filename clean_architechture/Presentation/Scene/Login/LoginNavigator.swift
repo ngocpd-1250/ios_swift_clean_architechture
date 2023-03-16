@@ -16,7 +16,7 @@ protocol LoginNavigatorType {
 struct LoginNavigator: LoginNavigatorType {
     unowned let window: UIWindow
     private let navigation = BaseNavigationController()
-    
+
     func toLogin() {
         let vc = LoginViewController.instantiate()
         let vm = LoginViewModel(navigator: self)
@@ -24,7 +24,7 @@ struct LoginNavigator: LoginNavigatorType {
         navigation.viewControllers = [vc]
         window.rootViewController = navigation
     }
-    
+
     func toMovieList() {
         let navigator = MovieListNavigator(window: window)
         navigator.toMovieList()

@@ -11,4 +11,3 @@ import RxSwift
 final class API: APIBase {
     static var shared = API()
 }
-

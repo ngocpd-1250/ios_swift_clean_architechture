@@ -15,7 +15,7 @@ final class MovieItemCell: BaseTableViewCell {
     @IBOutlet weak var averageLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var containerView: UIView!
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         posterImageView.kf.cancelDownloadTask()
@@ -23,7 +23,7 @@ final class MovieItemCell: BaseTableViewCell {
         typeLabel.text = nil
         averageLabel.text = nil
     }
-    
+
     func bind(movie: Movie) {
         titleLabel.text = movie.title
         typeLabel.text = movie.video ? "Video" : "Others"

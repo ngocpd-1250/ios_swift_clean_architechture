@@ -10,26 +10,25 @@ import Reusable
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
-    
     var window: UIWindow?
-    
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+    func application(_: UIApplication,
+                     didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setUpRoot()
         return true
     }
-    
+
     private func setUpRoot() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.makeKeyAndVisible()
-        
+
         if NSClassFromString("XCTest") != nil { // UnitTest
             window.rootViewController = UnitTestViewController()
         } else {
             let navigator = LoginNavigator(window: window)
             navigator.toLogin()
         }
-        
+
         self.window = window
     }
 }

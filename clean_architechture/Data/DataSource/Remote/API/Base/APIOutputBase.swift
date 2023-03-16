@@ -8,16 +8,9 @@
 import ObjectMapper
 
 open class APIOutputBase: Mappable {
-    
-    public init() {
-        
-    }
-    
-    public required init?(map: Map) {
+    public init() {}
 
-    }
-    
-    open func mapping(map: Map) {
-        
-    }
+    public required init?(map _: Map) {}
+
+    open func mapping(map _: Map) {}
 }

@@ -23,10 +23,10 @@ struct MovieData {
 }
 
 extension MovieData: Mappable {
-    init?(map: Map) {
+    init?(map _: Map) {
         self.init(id: 0)
     }
-    
+
     mutating func mapping(map: Map) {
         id <- map["id"]
         adult <- map["adult"]
@@ -44,7 +44,7 @@ extension MovieData: Mappable {
 
 extension MovieData: DomainMappable {
     typealias T = Movie
-    
+
     func toDomain() -> Movie {
         return Movie(id: id,
                      adult: adult,

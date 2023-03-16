@@ -14,8 +14,8 @@ protocol LoginUseCaseType {
 
 struct LoginUseCase: LoginUseCaseType {
     @Injected var repository: AuthRepository
-    
-    func login(email: String, password: String) -> Observable<Void> {
+
+    func login(email: String, password _: String) -> Observable<Void> {
         return repository.login(email: email, password: email)
     }
 }

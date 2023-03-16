@@ -8,6 +8,4 @@
 import ObjectMapper
 
 // swiftlint:disable:next final_class
-class APIOutput: APIOutputBase {
-
-}
+class APIOutput: APIOutputBase {}

@@ -14,7 +14,7 @@ protocol GetUserUseCaseType {
 
 struct GetUserUseCase: GetUserUseCaseType {
     let repository: UserRepository
-    
+
     func getUser() -> Observable<User> {
         return repository.getUser()
     }

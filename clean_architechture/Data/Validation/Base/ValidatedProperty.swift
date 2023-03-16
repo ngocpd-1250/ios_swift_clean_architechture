@@ -12,4 +12,4 @@ protocol ValidatedProperty {
     var validationError: ValidationError? { get }
 }
 
-extension Validated: ValidatedProperty { }
+extension Validated: ValidatedProperty {}

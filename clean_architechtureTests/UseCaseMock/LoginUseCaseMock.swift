@@ -12,8 +12,8 @@ import Foundation
 final class LoginUseCaseMock: LoginUseCaseType {
     var login_Called = false
     var login_ReturnValue = Observable.just(())
-    
-    func login(email: String, password: String) -> Observable<Void> {
+
+    func login(email _: String, password _: String) -> Observable<Void> {
         login_Called = true
         return login_ReturnValue
     }

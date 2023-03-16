@@ -10,26 +10,25 @@ import UIKit
 import Then
 
 final class BaseNavigationController: UINavigationController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configNavigationBar()
     }
-    
+
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         super.pushViewController(viewController, animated: animated)
 //        viewController.removeBackButtonTitle()
     }
-    
+
     private func configNavigationBar() {
         delegate = self
     }
 }
 
 extension BaseNavigationController: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController,
-                              didShow viewController: UIViewController,
-                              animated: Bool) {
+    func navigationController(_: UINavigationController,
+                              didShow _: UIViewController,
+                              animated _: Bool) {
         if viewControllers.count > 1 {
             interactivePopGestureRecognizer?.isEnabled = true
         } else {
@@ -37,4 +36,3 @@ extension BaseNavigationController: UINavigationControllerDelegate {
         }
     }
 }
-

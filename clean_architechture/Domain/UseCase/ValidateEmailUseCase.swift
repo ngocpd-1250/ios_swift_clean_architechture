@@ -14,7 +14,7 @@ protocol ValidateEmailUseCaseType {
 
 struct ValidateEmailUseCase: ValidateEmailUseCaseType {
     @Injected var validatorRepository: ValidatorRepository
-    
+
     func validateEmail(email: String) -> ValidationResult {
         return validatorRepository.validateEmail(email: email)
     }

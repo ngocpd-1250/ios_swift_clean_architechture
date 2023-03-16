@@ -19,7 +19,7 @@ extension Validation where Value == String {
             return .failure(ValidationError(message: message))
         }
     }
-    
+
     static func matchPassword(message: String) -> Validation {
         return .init { value in
             let regexPassword = "^(?=.*[!.?+$%#&*=@])(?=.*[A-Za-z0-9])[!.?+$%#&*=@A-Za-z0-9]{8,16}$"
@@ -33,26 +33,25 @@ extension Validation where Value == String {
 }
 
 extension Result where Failure == ValidationError {
-    
     var message: String {
         switch self {
-        case .success:
-            return ""
-        case .failure(let error):
-            return error.description
+            case .success:
+                return ""
+            case .failure(let error):
+                return error.description
         }
     }
-    
+
     var isValid: Bool {
         switch self {
-        case .success:
-            return true
-        case .failure:
-            return false
+            case .success:
+                return true
+            case .failure:
+                return false
         }
     }
-    
+
     func mapToVoid() -> ValidationResult {
-        return self.map { _ in () }
+        return map { _ in () }
     }
 }

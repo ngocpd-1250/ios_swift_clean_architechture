@@ -13,7 +13,7 @@ protocol MovieListNavigatorType {
 
 struct MovieListNavigator: MovieListNavigatorType {
     unowned let window: UIWindow
-    
+
     func toMovieList() {
         let vc = MovieListViewController.instantiate()
         let vm = MovieListViewModel(navigator: self)

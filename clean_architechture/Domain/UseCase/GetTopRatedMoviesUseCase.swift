@@ -14,7 +14,7 @@ protocol GetTopRatedMoviesUseCaseType {
 
 struct GetTopRatedMoviesUseCase: GetTopRatedMoviesUseCaseType {
     @Injected var repository: MovieRepository
-    
+
     func getTopRatedMovies() -> Observable<[Movie]> {
         return repository.getTopRatedMovies()
     }

@@ -14,7 +14,7 @@ protocol ValidatePasswordUseCaseType {
 
 struct ValidatePasswordUseCase: ValidatePasswordUseCaseType {
     @Injected var validatorRepository: ValidatorRepository
-    
+
     func validatePassword(password: String) -> ValidationResult {
         return validatorRepository.validatePassword(password: password)
     }

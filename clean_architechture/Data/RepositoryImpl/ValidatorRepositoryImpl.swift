@@ -12,9 +12,8 @@ struct ValidatorRepositoryImpl: ValidatorRepository {
     func validateEmail(email: String) -> ValidationResult {
         return Validator.validateEmail(email).mapToVoid()
     }
-    
+
     func validatePassword(password: String) -> ValidationResult {
         return Validator.validatePassword(password).mapToVoid()
     }
 }
-

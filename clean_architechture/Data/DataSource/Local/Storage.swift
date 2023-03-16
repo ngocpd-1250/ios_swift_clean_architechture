@@ -12,15 +12,15 @@ struct Storage<T: Codable> {
     struct Wrapper<T>: Codable where T: Codable {
         let wrapped: T
     }
-    
+
     private let key: String
     private let defaultValue: T
-    
+
     init(key: String, defaultValue: T) {
         self.key = key
         self.defaultValue = defaultValue
     }
-    
+
     var wrappedValue: T {
         get {
             guard let data = UserDefaults.standard.object(forKey: key) as? Data else {

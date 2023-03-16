@@ -14,7 +14,7 @@ extension UIColor {
         blue: 112 / 255,
         alpha: 1
     )
-    
+
     static let lowPink = UIColor(
         red: 244 / 255,
         green: 226 / 255,

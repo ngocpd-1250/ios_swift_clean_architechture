@@ -8,15 +8,15 @@
 import UIKit
 
 protocol Bindable: AnyObject {
-    associatedtype ViewModel1
-    
-    var viewModel: ViewModel1! { get set }
-    
+    associatedtype ViewModel
+
+    var viewModel: ViewModel! { get set }
+
     func bindViewModel()
 }
 
 extension Bindable where Self: UIViewController {
-    func bindViewModel(to model: Self.ViewModel1) {
+    func bindViewModel(to model: Self.ViewModel) {
         viewModel = model
         loadViewIfNeeded()
         bindViewModel()

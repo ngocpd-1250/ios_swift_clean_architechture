@@ -10,7 +10,6 @@ import Reusable
 
 // swiftlint:disable:next final_class
 class BaseTableViewCell: UITableViewCell, NibReusable {
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none

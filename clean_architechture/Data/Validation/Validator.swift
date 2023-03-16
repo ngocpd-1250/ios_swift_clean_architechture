@@ -9,13 +9,13 @@ import ValidatedPropertyKit
 
 struct Validator {
     @Validated(.matchEmail(message: "Invalid Email"))
-    
+
     var email: String?
-    
+
     @Validated(.matchPassword(message: "Invalid Password"))
-    
+
     var password: String?
-    
+
     var validatedProperties: [ValidatedProperty] {
         return [
             _email,
@@ -28,7 +28,7 @@ extension Validator {
     static func validateEmail(_ email: String) -> Result<String, ValidationError> {
         return Validator()._email.isValid(value: email)
     }
-    
+
     static func validatePassword(_ password: String) -> Result<String, ValidationError> {
         return Validator()._password.isValid(value: password)
     }

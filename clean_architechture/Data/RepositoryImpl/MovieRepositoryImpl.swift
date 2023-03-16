@@ -9,7 +9,6 @@ import Foundation
 import RxSwift
 
 struct MovieRepositoryImpl: MovieRepository {
-    
     func getTopRatedMovies() -> Observable<[Movie]> {
         let input = API.GetTopRatedMoviesInput()
         return API.shared.getTopRatedMovie(input).map { output in

@@ -9,10 +9,10 @@ import RxTest
 
 extension TestableObserver {
     var lastEventElement: Element? {
-        return self.events.last?.value.element
+        return events.last?.value.element
     }
-    
+
     var firstEventElement: Element? {
-        return self.events.first?.value.element
+        return events.first?.value.element
     }
 }
