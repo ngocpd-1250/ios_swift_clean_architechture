@@ -26,7 +26,7 @@ targets: # The List of our targets
   clean_architechture:
     type: application
     platform: iOS
-    deploymentTarget: "12.0"
+    deploymentTarget: "13.0"
     devices: [iPhone]
     sources:
       #Sources
@@ -102,7 +102,7 @@ targets: # The List of our targets
   clean_architechtureTests:
     type: bundle.unit-test
     platform: iOS
-    deploymentTarget: "12.0"
+    deploymentTarget: "13.0"
     sources:
       - path: clean_architechtureTests
     dependencies:
