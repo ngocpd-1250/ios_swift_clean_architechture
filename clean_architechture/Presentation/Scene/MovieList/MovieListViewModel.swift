@@ -10,7 +10,7 @@ import RxCocoa
 
 struct MovieListViewModel {
     let navigator: MovieListNavigatorType
-    let getTopRatedMoviesUseCase: GetTopRatedMoviesUseCaseType = Resolver.resolve()
+    @Injected var getTopRatedMoviesUseCase: GetTopRatedMoviesUseCaseType
 }
 
 // MARK: - ViewModel

@@ -10,9 +10,9 @@ import RxCocoa
 
 struct LoginViewModel {
     let navigator: LoginNavigatorType
-    var loginUseCase: LoginUseCaseType = Resolver.resolve()
-    var validateEmailUseCase: ValidateEmailUseCaseType = Resolver.resolve()
-    var validatePasswordUseCase: ValidatePasswordUseCaseType = Resolver.resolve()
+    @Injected var loginUseCase: LoginUseCaseType
+    @Injected var validateEmailUseCase: ValidateEmailUseCaseType
+    @Injected var validatePasswordUseCase: ValidatePasswordUseCaseType
 }
 
 // MARK: - ViewModel

@@ -33,8 +33,8 @@ final class LoginViewModelTests: XCTestCase {
         super.setUp()
         navigator = LoginNavigatorMock()
         loginUseCase = LoginUseCaseMock()
-        viewModel = LoginViewModel(navigator: navigator,
-                                   loginUseCase: loginUseCase)
+        viewModel = LoginViewModel(navigator: navigator)
+        viewModel.loginUseCase = loginUseCase
 
         input = LoginViewModel.Input(email: email.asDriverOnErrorJustComplete(),
                                      password: password.asDriverOnErrorJustComplete(),
