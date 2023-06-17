@@ -105,6 +105,27 @@ final class LoginViewModelTests: XCTestCase {
         XCTAssertEqual(isEnableOutput.lastEventElement, false)
     }
 
+    func test_emailInvalid_passwordInvalid_disableButton() {
+        // arrange
+        scheduler.createColdObservable([.next(0, "abc@.com")])
+            .bind(to: email)
+            .disposed(by: disposeBag)
+
+        scheduler.createColdObservable([.next(0, "Aa123456")])
+            .bind(to: password)
+            .disposed(by: disposeBag)
+
+        scheduler.createColdObservable([.next(0, ())])
+            .bind(to: login)
+            .disposed(by: disposeBag)
+
+        // act
+        scheduler.start()
+
+        // assert
+        XCTAssertEqual(isEnableOutput.lastEventElement, false)
+    }
+
     func test_emailValid_passwordValid_enableButton_callLogin_toHome() {
         // arrange
         scheduler.createColdObservable([.next(0, "abc@gmail.com")])
